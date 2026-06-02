@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aero-Riel — Movilidad Aérea del Futuro</title>
+  <meta name="description" content="Aero-Riel Sostenible: sistema de movilidad aérea ligera, modular y automatizada. Corredor piloto La Estrella–Caldas. UNAL Medellín 2026.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<!-- ══ LIGHTBOX ══════════════════════════════════════════════ -->
+<div class="lb" id="lb">
+  <span class="lb-close" id="lbClose">×</span>
+  <img id="lbImg" src="" alt="">
+</div>
+
+<!-- ══ NAVIGATION ════════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#hero" class="nav-brand">
+    <div class="nav-pip"></div>AERO-RIEL
+  </a>
+  <ul class="nav-links">
+    <li><a href="#problema">Problema</a></li>
+    <li><a href="#como">Sistema</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#quijote">Quijote</a></li>
+    <li><a href="#corredor">Corredor</a></li>
+    <li><a href="#stats">Viabilidad</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+    <li><a href="#cta" class="nav-pill">Conocer más →</a></li>
+  </ul>
+</nav>
+
+
+<!-- ══ HERO SLIDESHOW ════════════════════════════════════════ -->
+<section id="hero">
+
+  <!-- Slides — imágenes desde /images/renders/ -->
+  <div class="slide active" style="background-image:url('/images/renders/render_12.jpg')"></div>
+  <div class="slide"        style="background-image:url('/images/renders/render_19.jpg')"></div>
+  <div class="slide"        style="background-image:url('/images/renders/render_1.jpg')"></div>
+  <div class="slide"        style="background-image:url('/images/renders/render_18.jpg')"></div>
+
+  <div class="hero-veil"></div>
+  <div class="hero-counter" id="heroCount">01</div>
+
+  <div class="hero-text">
+    <div class="hero-kicker">Proyecto Integrado de Ingeniería — UNAL Medellín 2026</div>
+    <h1 class="hero-h1">
+      AERO<em>-</em>RIEL<br>
+      <span style="font-size:.52em;font-weight:700;color:rgba(255,255,255,.65);letter-spacing:-.02em">SOSTENIBLE</span>
+    </h1>
+    <p class="hero-tagline">Movilidad aérea ligera, modular y automatizada para el Valle de Aburrá</p>
+    <div class="hero-pills">
+      <span class="hpill">⬆ Elevado</span>
+      <span class="hpill">⚡ 100% Eléctrico</span>
+      <span class="hpill">⬡ Modular</span>
+      <span class="hpill">🤖 Automatizado</span>
+      <span class="hpill">🌿 Sostenible</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="#como" class="cta-main">Descubrir el sistema →</a>
+      <a href="#galeria" class="cta-ghost">Ver renders 3D</a>
+    </div>
+    
+    <!-- Stats panel moved inside hero-text -->
+    <div class="hero-stats">
+      <div class="hstat">
+        <div class="hs-v">8<span class="u">km</span></div>
+        <div class="hs-l">Corredor piloto</div>
+        <div class="hs-s">La Estrella → Caldas</div>
+      </div>
+      <div class="hstat">
+        <div class="hs-v">10.85<span class="u">M$/km</span></div>
+        <div class="hs-l">Costo por kilómetro</div>
+        <div class="hs-s">vs USD 100–250M metro subterráneo</div>
+      </div>
+      <div class="hstat">
+        <div class="hs-v">11.2<span class="u">K</span></div>
+        <div class="hs-l">Usuarios potenciales</div>
+        <div class="hs-s">Escenario base 8% captación</div>
+      </div>
+      <div class="hstat">
+        <div class="hs-v">22<span class="u">pasajeros</span></div>
+        <div class="hs-l">Por cabina</div>
+        <div class="hs-s">Control centralizado, sin conductor</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slideshow dots -->
+  <div class="hero-dots">
+    <div class="hdot on" data-i="0"></div>
+    <div class="hdot"    data-i="1"></div>
+    <div class="hdot"    data-i="2"></div>
+    <div class="hdot"    data-i="3"></div>
+  </div>
+
+  <div class="hero-scroll"><div class="hsl"></div>Scroll</div>
+</section>
+
+
+<!-- ══ PROBLEMA ══════════════════════════════════════════════ -->
+<section id="problema" class="sec" style="background:var(--ink2);position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:url('/images/renders/render_9.jpg');background-size:cover;background-position:center 40%;opacity:.08;filter:saturate(.4)"></div>
+  <div style="position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start" class="prob-layout">
+    <div>
+      <div class="slbl rv">El desafío</div>
+      <h2 class="sh rv">La movilidad urbana<br><span class="hl">está bloqueada</span></h2>
+      <div class="prob-cards rv">
+        <div class="pcard"><div class="pc-ico">💰</div><h3>Alta Inversión</h3><p>El metro subterráneo supera USD 250M por kilómetro. Imposible replicar en corredores secundarios.</p></div>
+        <div class="pcard"><div class="pc-ico">🏗️</div><h3>Obras Invasivas</h3><p>Años de intervención sobre vías y espacio público. La ciudad paga el costo durante toda la construcción.</p></div>
+        <div class="pcard"><div class="pc-ico">⏳</div><h3>Plazos Interminables</h3><p>Planeación, licencias y construcción que se extienden por décadas mientras la demanda crece sin respuesta.</p></div>
+        <div class="pcard"><div class="pc-ico">🗺️</div><h3>Rigidez Territorial</h3><p>Sistemas pesados no se adaptan a la geografía montañosa ni a corredores de menor escala como el sur del Valle.</p></div>
+      </div>
+    </div>
+    <div class="prob-quote rv">
+      <div class="pq-mark">"</div>
+      <p class="pq-text">El proyecto evalúa una alternativa aérea, modular y complementaria para mejorar la conectividad con menor intervención sobre el territorio.</p>
+      <p class="pq-attr">— Propuesta Aero-Riel, UNAL Facultad de Minas</p>
+    </div>
+  </div>
+</section>
+
+<!-- Estilos inline para el bloque problema (complementan styles.css) -->
+<style>
+.prob-layout { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
+@media(max-width:900px){.prob-layout{grid-template-columns:1fr;gap:36px}}
+.prob-cards { display:flex; flex-direction:column; gap:14px; }
+.pcard { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07); border-radius:18px; padding:28px 32px; transition:all .4s var(--ease); position:relative; overflow:hidden; }
+.pcard::after { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:linear-gradient(to bottom,var(--teal),var(--leaf)); transform:scaleY(0); transform-origin:top; transition:transform .4s var(--ease); border-radius:0 0 0 18px; }
+.pcard:hover { background:rgba(255,255,255,.07); border-color:rgba(0,194,179,.18); transform:translateX(5px); }
+.pcard:hover::after { transform:scaleY(1); }
+.pc-ico { font-size:1.6rem; margin-bottom:12px; }
+.pcard h3 { font-family:var(--syne); font-weight:700; font-size:1rem; color:var(--white); margin-bottom:6px; letter-spacing:-.02em; }
+.pcard p { font-size:.855rem; color:rgba(255,255,255,.48); line-height:1.65; }
+.prob-quote { background:linear-gradient(135deg,rgba(0,194,179,.1) 0%,rgba(45,106,53,.12) 100%); border:1px solid rgba(0,194,179,.18); border-radius:20px; padding:42px; display:flex; flex-direction:column; gap:20px; position:sticky; top:120px; }
+.pq-mark { font-family:var(--syne); font-weight:800; font-size:5rem; line-height:.8; color:rgba(0,194,179,.2); }
+.pq-text { font-family:var(--syne); font-weight:600; font-size:clamp(1.1rem,2.2vw,1.45rem); line-height:1.45; letter-spacing:-.025em; color:rgba(255,255,255,.88); font-style:italic; }
+.pq-attr { font-size:.8rem; color:rgba(255,255,255,.35); letter-spacing:.04em; font-weight:500; }
+</style>
+
+
+<!-- ══ FULLBLEED 1 ════════════════════════════════════════════ -->
+<div class="fullbleed rv">
+  <div class="fb-img" style="background-image:url('/images/renders/render_8.jpg')"></div>
+  <div class="fb-overlay"></div>
+  <div class="fb-content">
+    <div class="fb-text">
+      <h2>Cabinas que vuelan<br>sobre la ciudad</h2>
+      <p>Módulos eléctricos automatizados suspendidos sobre arcos de acero, desplazándose en silencio por encima del tráfico. Sin conductor. Sin emisiones.</p>
+    </div>
+    <div class="fb-badge">
+      <div class="num">100%</div>
+      <div class="lbl">Operación Eléctrica</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ CÓMO FUNCIONA ══════════════════════════════════════════ -->
+<section id="como" class="sec" style="background:var(--cream);color:var(--t1)">
+  <div class="rv">
+    <div class="slbl dk">Sistema</div>
+    <h2 class="sh" style="color:var(--t1)">¿Cómo funciona<br><span class="hlg">el Aero-Riel?</span></h2>
+    <p class="sp dk">Un sistema elevado sobre riel con cabinas eléctricas autónomas, integradas al Metro y rutas alimentadoras del Valle de Aburrá. Modular, escalable y construible por fases.</p>
+  </div>
+  <div class="como-layout rv">
+    <div class="como-imgwrap">
+      <div class="como-main">
+        <img src="/images/renders/render_3.jpg" alt="Estación Aero-Riel">
+      </div>
+
+    </div>
+    <div>
+      <div class="como-steps">
+        <div class="cstep">
+          <div class="cs-n">01</div>
+          <div><div class="cs-t">Estructura Elevada Ligera</div><div class="cs-d">Arcos y pilares de acero integrados al paisaje. El riel corre elevado liberando el espacio en superficie para peatones y tráfico.</div></div>
+        </div>
+        <div class="cstep">
+          <div class="cs-n">02</div>
+          <div><div class="cs-t">Cabinas Eléctricas Autónomas</div><div class="cs-d">Módulos de hasta 22 pasajeros con tracción eléctrica, control centralizado y operación sin conductor. Frecuencias en tiempo real.</div></div>
+        </div>
+        <div class="cstep">
+          <div class="cs-n">03</div>
+          <div><div class="cs-t">Integración Modal Completa</div><div class="cs-d">Estaciones conectadas con la Línea A del Metro y rutas de buses alimentadores. Viajes puerta a puerta sin transbordos complejos.</div></div>
+        </div>
+        <div class="cstep">
+          <div class="cs-n">04</div>
+          <div><div class="cs-t">Diseño Modular y Escalable</div><div class="cs-d">Cada tramo construible de forma independiente. Se adapta a topografías complejas y replica en cualquier corredor metropolitano.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Specs strip -->
+  <div class="specs rv">
+    <div class="spec"><div class="spec-v">22 <span class="spec-u">pasajeros</span></div><div class="spec-n">Por cabina</div></div>
+    <div class="spec"><div class="spec-v">8 <span class="spec-u">km</span></div><div class="spec-n">Corredor piloto</div></div>
+    <div class="spec"><div class="spec-v">100<span class="spec-u">%</span></div><div class="spec-n">Eléctrico</div></div>
+    <div class="spec"><div class="spec-v">0 <span class="spec-u">CO₂</span></div><div class="spec-n">Emisiones directas</div></div>
+    <div class="spec"><div class="spec-v">24<span class="spec-u">/7</span></div><div class="spec-n">Operación</div></div>
+  </div>
+</section>
+
+
+<!-- ══ GALERÍA 3D ═════════════════════════════════════════════ -->
+<section id="galeria" style="background:var(--ink);padding:110px 80px">
+  <div class="gallery-header rv">
+    <div class="slbl">Renders 3D del proyecto</div>
+    <h2 class="sh">Visualización<br><span class="hl">del futuro</span></h2>
+    <p class="sp" style="margin-bottom:56px">Modelos conceptuales 3D desarrollados en Blender. Cada render muestra el Aero-Riel integrado en un entorno urbano metropolitano real. Desplázate para explorar cada perspectiva.</p>
+  </div>
+  
+  <!-- Carousel Container -->
+  <div class="carousel-wrapper">
+    <div class="carousel-container">
+      <div class="carousel-slide active" data-label="Estación central — vista frontal">
+        <img src="/images/renders/render_19.jpg" alt="Estación frontal">
+      </div>
+      <div class="carousel-slide" data-label="Plataforma elevada">
+        <img src="/images/renders/render_5.jpg" alt="Vista elevada">
+      </div>
+      <div class="carousel-slide" data-label="Acceso peatonal">
+        <img src="/images/renders/render_2.jpg" alt="Acceso peatonal">
+      </div>
+      <div class="carousel-slide" data-label="Arco estructural con cabinas">
+        <img src="/images/renders/render_14.jpg" alt="Arco estructural">
+      </div>
+      <div class="carousel-slide" data-label="Cabina — detalle">
+        <img src="/images/renders/render_15.jpg" alt="Cabina close-up">
+      </div>
+      <div class="carousel-slide" data-label="Módulo de transporte">
+        <img src="/images/renders/render_10.jpg" alt="Pod close">
+      </div>
+      <div class="carousel-slide" data-label="Corredor urbano — perspectiva peatonal">
+        <img src="/images/renders/render_9.jpg" alt="Corredor urbano">
+      </div>
+      <div class="carousel-slide" data-label="Cabinas sobre fachada">
+        <img src="/images/renders/render_16.jpg" alt="Cabina fachada">
+      </div>
+      <div class="carousel-slide" data-label="Sistema de suspensión">
+        <img src="/images/renders/render_17.jpg" alt="Suspensión">
+      </div>
+    </div>
+    
+    <!-- Carousel Controls -->
+    <button class="carousel-btn prev" id="carouselPrev">←</button>
+    <button class="carousel-btn next" id="carouselNext">→</button>
+    
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <span class="carousel-count"><span id="carouselCurrent">1</span> / <span id="carouselTotal">9</span></span>
+      <div class="carousel-label" id="carouselLabel">Estación central — vista frontal</div>
+    </div>
+  </div>
+  
+  <!-- Carousel Thumbnails -->
+  <div class="carousel-thumbnails rv">
+    <div class="thumb active" data-i="0"><img src="/images/renders/render_19.jpg" alt="thumb 1"></div>
+    <div class="thumb" data-i="1"><img src="/images/renders/render_5.jpg" alt="thumb 2"></div>
+    <div class="thumb" data-i="2"><img src="/images/renders/render_2.jpg" alt="thumb 3"></div>
+    <div class="thumb" data-i="3"><img src="/images/renders/render_14.jpg" alt="thumb 4"></div>
+    <div class="thumb" data-i="4"><img src="/images/renders/render_15.jpg" alt="thumb 5"></div>
+    <div class="thumb" data-i="5"><img src="/images/renders/render_10.jpg" alt="thumb 6"></div>
+    <div class="thumb" data-i="6"><img src="/images/renders/render_9.jpg" alt="thumb 7"></div>
+    <div class="thumb" data-i="7"><img src="/images/renders/render_16.jpg" alt="thumb 8"></div>
+    <div class="thumb" data-i="8"><img src="/images/renders/render_17.jpg" alt="thumb 9"></div>
+  </div>
+</section>
+
+
+<!-- ══ QUIJOTE ════════════════════════════════════════════════ -->
+<section id="quijote" class="sec" style="background:var(--forest)">
+  <div class="rv">
+    <div class="slbl">Documento de referencia</div>
+    <h2 class="sh">La Tecnología<br><span class="hl">del Motor Aero-Riel</span></h2>
+  </div>
+
+  <!-- Contenido con texto e imagen -->
+  <div class="quijote-content rv">
+    <div class="quijote-text">
+      <h3>Sistema de Propulsión Eléctrica Integrada</h3>
+      <p>El Aero-Riel utiliza un sistema de tracción eléctrica de última generación, diseñado para operación continua con eficiencia máxima. Cada cabina cuenta con motores síncronos permanentes acoplados al riel de aluminio de perfil especial.</p>
+      
+      <h3 style="margin-top:28px">Características principales:</h3>
+      <ul>
+        <li><strong>Motores síncronos de imanes permanentes</strong> — Eficiencia del 95%+ sin pérdidas por fricción</li>
+        <li><strong>Batería de ion-litio modular</strong> — 480 kWh por cabina con ciclo de vida 10+ años</li>
+        <li><strong>Frenado regenerativo</strong> — Recupera hasta el 60% de energía en descensos</li>
+        <li><strong>Control centralizado PLC</strong> — Sincronización automática de flota y gestión de demanda</li>
+        <li><strong>Carga inalámbrica inductiva</strong> — Recarga completa en 3 horas sin mantenimiento</li>
+      </ul>
+      
+      <p style="margin-top:24px;font-size:0.9rem;color:rgba(255,255,255,.5)"><em>Especificaciones validadas por simulación CFD y pruebas de laboratorio. Prototipos en fase de construcción.</em></p>
+    </div>
+    
+    <div class="quijote-img">
+      <img src="/images/quijote/quijote.jpeg" alt="Concepto tecnológico del motor">
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,194,179,.15),rgba(93,184,104,.1));pointer-events:none"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FULLBLEED 2 ════════════════════════════════════════════ -->
+<div class="fullbleed rv">
+  <div class="fb-img" style="background-image:url('/images/renders/render_15.jpg')"></div>
+  <div class="fb-overlay" style="background:linear-gradient(135deg,rgba(5,18,10,.85) 0%,rgba(5,18,10,.2) 60%,transparent 100%)"></div>
+  <div class="fb-content">
+    <div class="fb-text">
+      <h2>Diseñadas para<br>las personas</h2>
+      <p>Cabinas de acero y vidrio que combinan seguridad estructural con experiencia de usuario. Amplias, luminosas y silenciosas.</p>
+    </div>
+    <div class="fb-badge">
+      <div class="num">0</div>
+      <div class="lbl">Conductor necesario</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ CORREDOR ═══════════════════════════════════════════════ -->
+<section id="corredor" class="sec" style="background:var(--ink)">
+  <div class="rv">
+    <div class="slbl">Corredor piloto</div>
+    <h2 class="sh">La Estrella — Caldas:<br><span class="hl">el primer tramo</span></h2>
+    <p class="sp">8 kilómetros en el sur del Valle de Aburrá como escenario de validación real. Conectividad metropolitana, demanda identificada y capacidad de escalar.</p>
+  </div>
+  <div class="corr-layout rv">
+    <div class="route-map">
+      <div class="route-track">
+        <div class="rt-line">
+          <div class="rt-node a"><div class="rtn-name">La Estrella</div><div class="rtn-dot"></div><div class="rtn-tag">Metro Línea A</div></div>
+          <div class="rt-km">8<span> km</span></div>
+          <div class="rt-pod"></div>
+          <div class="rt-node b"><div class="rtn-name">Caldas</div><div class="rtn-dot"></div><div class="rtn-tag">Rutas integradas</div></div>
+        </div>
+      </div>
+      <div class="route-kpis">
+        <div class="rkpi"><div class="v">≈11.2K</div><div class="l">Usuarios frecuentes</div></div>
+        <div class="rkpi"><div class="v">8%</div><div class="l">Captación estimada</div></div>
+        <div class="rkpi"><div class="v">COP 3.800</div><div class="l">Tarifa sugerida</div></div>
+        <div class="rkpi"><div class="v">USD 95.47M</div><div class="l">Inversión total</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="cfeat"><div class="cfi">🚇</div><div class="cft"><h4>Integración Metropolitana</h4><p>Conexión potencial con la Línea A del Metro y rutas hacia Caldas.</p></div></div>
+      <div class="cfeat"><div class="cfi">📈</div><div class="cft"><h4>Demanda Real Identificada</h4><p>11.200 usuarios frecuentes potenciales justifican la inversión inicial.</p></div></div>
+      <div class="cfeat"><div class="cfi">🔬</div><div class="cft"><h4>Escenario de Validación</h4><p>Operación real, aceptación social e impactos ambientales en condiciones metropolitanas.</p></div></div>
+      <div class="cfeat"><div class="cfi">🗺️</div><div class="cft"><h4>Plataforma Escalable</h4><p>Valida la tecnología para replicarla en otros territorios del país.</p></div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ STATS / VIABILIDAD ════════════════════════════════════ -->
+<section id="stats" class="sec" style="background:var(--forest);position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 10% 50%,rgba(0,194,179,.08) 0%,transparent 60%),radial-gradient(ellipse 50% 60% at 90% 50%,rgba(93,184,104,.08) 0%,transparent 60%)"></div>
+  <div class="stats-layout" style="position:relative;z-index:1">
+    <div class="rv">
+      <div class="slbl">Viabilidad financiera</div>
+      <h2 class="sh">El costo más competitivo<br><span class="hl">del mercado</span></h2>
+      <p class="sp">Con USD 10.85M por kilómetro, el Aero-Riel es la opción de transporte masivo más eficiente en costo de infraestructura.</p>
+      <div class="fin-cards">
+        <div class="fc"><div class="fn">Inversión Total</div><div class="fv"><span class="cu">USD</span>95.47M</div><div class="fd">Con contingencias para corredor de 8 km</div></div>
+        <div class="fc"><div class="fn">Relación B/C</div><div class="fv">0.95</div><div class="fd">Próximo al equilibrio — viabilidad condicionada</div></div>
+        <div class="fc w"><div class="fn">Tarifa comercial</div><div class="fv"><span class="cu">COP</span>3.200 — 4.200</div><div class="fd">Valor sugerido COP 3.800 por viaje. Asequible para el usuario habitual de transporte público</div></div>
+      </div>
+    </div>
+    <div class="rv">
+      <p class="chlabel">Comparativo inversión por km (USD millones)</p>
+      <div class="chart-wrap" id="chart">
+        <div class="crow hi"><div class="cn">Aero-Riel</div><div class="cb-wrap"><div class="cb hi" data-w="4.3"></div></div><div class="cv">10.85</div></div>
+        <div class="crow"><div class="cn">Teleférico urbano</div><div class="cb-wrap"><div class="cb" data-w="10"></div></div><div class="cv">15–35</div></div>
+        <div class="crow"><div class="cn">Tren ligero</div><div class="cb-wrap"><div class="cb" data-w="16"></div></div><div class="cv">20–60</div></div>
+        <div class="crow"><div class="cn">Monorriel</div><div class="cb-wrap"><div class="cb" data-w="24"></div></div><div class="cv">30–70</div></div>
+        <div class="crow"><div class="cn">Metro elevado</div><div class="cb-wrap"><div class="cb" data-w="30"></div></div><div class="cv">50–100</div></div>
+        <div class="crow"><div class="cn">Metro subterráneo</div><div class="cb-wrap"><div class="cb" data-w="60"></div></div><div class="cv">100–250+</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FULLBLEED 3 ════════════════════════════════════════════ -->
+<div class="fullbleed rv">
+  <div class="fb-img" style="background-image:url('/images/renders/render_18.jpg')"></div>
+  <div class="fb-overlay" style="background:linear-gradient(to right,rgba(5,18,10,.8) 0%,rgba(5,18,10,.2) 70%,transparent 100%)"></div>
+  <div class="fb-content">
+    <div class="fb-text">
+      <h2>8 kilómetros de<br>nueva conectividad</h2>
+      <p>De La Estrella a Caldas, por el aire. Un corredor que transforma los desplazamientos cotidianos del sur del Valle de Aburrá.</p>
+    </div>
+    <div class="fb-badge"><div class="num">8 km</div><div class="lbl">Corredor Piloto</div></div>
+  </div>
+</div>
+
+
+<!-- ══ EQUIPO ═════════════════════════════════════════════════ -->
+<section id="equipo" class="sec" style="background:var(--off);color:var(--t1)">
+  <div class="team-top">
+    <div class="rv">
+      <div class="slbl dk">El equipo</div>
+      <h2 class="sh" style="color:var(--t1)">Ocho ingenieros<br><span class="hlg">detrás del riel</span></h2>
+    </div>
+    <div class="rv">
+      <p style="font-size:.93rem;color:var(--t3);line-height:1.8">Estudiantes de la Facultad de Minas de la Universidad Nacional de Colombia que convirtieron una idea técnica en una propuesta de movilidad integral, evaluada y defendible.</p>
+      <p style="font-size:.78rem;color:var(--t4);margin-top:10px;font-style:italic">Director: Diego Alexander Herrera Uribe · Proyecto Integrado de Ingeniería · 2026</p>
+    </div>
+  </div>
+  <div class="tgrid rv">
+    <div class="tcard"><div class="tav">IV</div><div class="tn">Isabella Vélez Ospina</div><div class="tr">Ingeniería</div><div class="tu">UNAL Facultad de Minas</div></div>
+    <div class="tcard"><div class="tav">JM</div><div class="tn">Jerónimo Morales Sierra</div><div class="tr">Ingeniería</div><div class="tu">UNAL Facultad de Minas</div></div>
+    <div class="tcard"><div class="tav">SH</div><div class="tn">Santiago Hurtado Giraldo</div><div class="tr">Ingeniería</div><div class="tu">UNAL Facultad de Minas</div></div>
+    <div class="tcard"><div class="tav">JJ</div><div class="tn">Juan Andrés Jiménez Vélez</div><div class="tr">Ingeniería</div><div class="tu">UNAL Facultad de Minas</div></div>
+    <div class="tcard"><div class="tav">AO</div><div class="tn">Anthony Ochoa Henao</div><div class="tr">Ingeniería</div><div class="tu">UNAL Facultad de Minas</div></div>
+    <div class="tcard"><div class="tav">AA</div><div class="tn">Algerniro J. Amaya González</div><div class="tr">Ingeniería</div><div class="tu">UNAL Facultad de Minas</div></div>
+    <div class="tcard"><div class="tav">LS</div><div class="tn">Laura M. Solano Castañeda</div><div class="tr">Ingeniería</div><div class="tu">UNAL Facultad de Minas</div></div>
+    <div class="tcard"><div class="tav">YA</div><div class="tn">Angela Y. Acosta Alfonso</div><div class="tr">Ingeniería</div><div class="tu">UNAL Facultad de Minas</div></div>
+  </div>
+
+  <!-- Consultor Arquitecto -->
+  <div class="team-consultant rv">
+    <div class="tc-label">Consultor Arquitectónico</div>
+    <div class="tc-name">Sergio Rivera</div>
+    <div class="tc-role">Arquitecto y Especialista en Diseño Urbano Sostenible</div>
+  </div>
+</section>
+
+
+<!-- ══ FASES ══════════════════════════════════════════════════ -->
+<section id="fases" class="sec" style="background:var(--white);color:var(--t1)">
+  <div class="rv">
+    <div class="slbl dk">Hoja de ruta</div>
+    <h2 class="sh" style="color:var(--t1)">Del concepto a<br><span class="hlg">la implementación</span></h2>
+    <p class="sp dk">Proceso riguroso de validación antes de comprometer recursos. Cada fase cierra vacíos críticos antes de avanzar.</p>
+  </div>
+  <div class="tl rv">
+    <div class="ti"><div class="tim"><div class="tid"></div></div><div class="tic"><div class="tph">Fase 1 — Completada</div><div class="tttl">Evaluación Integral del Proyecto</div><div class="tdsc">Estructuración del problema, estudio de mercado, análisis social y ambiental, revisión técnica y financiera. Viabilidad preliminar establecida.</div></div></div>
+    <div class="ti"><div class="tim"><div class="tid" style="background:rgba(0,194,179,.45)"></div></div><div class="tic"><div class="tph">Fase 2 — Próxima</div><div class="tttl">Validación Rigurosa</div><div class="tdsc">Cierre de vacíos: demanda real, costos O&M, sensibilidad financiera, prototipo físico, pruebas de seguridad y licencias regulatorias.</div></div></div>
+    <div class="ti"><div class="tim"><div class="tid" style="background:rgba(255,255,255,.18)"></div></div><div class="tic"><div class="tph">Fase 3 — Condicional</div><div class="tttl">Implementación Responsable</div><div class="tdsc">Construcción del corredor La Estrella–Caldas. Operación inicial, medición de indicadores reales y ajuste del modelo financiero.</div></div></div>
+    <div class="ti"><div class="tim"><div class="tid" style="background:rgba(255,255,255,.09)"></div></div><div class="tic"><div class="tph">Fase 4 — Visión</div><div class="tttl">Red Metropolitana Aero-Riel</div><div class="tdsc">Expansión a múltiples corredores del Valle de Aburrá y otras ciudades colombianas de geografía similar.</div></div></div>
+  </div>
+</section>
+
+
+<!-- ══ CTA ════════════════════════════════════════════════════ -->
+<section id="cta" style="background:var(--ink);position:relative;overflow:hidden;padding:140px 80px;text-align:center">
+  <div class="cta-bg" style="background-image:url('/images/renders/render_19.jpg')"></div>
+  <div class="cta-inner rv">
+    <div class="slbl" style="justify-content:center;color:var(--teal)">
+      <span style="background:var(--teal);width:20px;height:1.5px;display:block"></span>
+      El futuro comienza aquí
+    </div>
+    <h2 class="sh" style="color:var(--white);max-width:860px;margin:0 auto 18px;text-align:center">
+      La movilidad urbana<br>necesita un <span class="hl">nuevo riel</span>
+    </h2>
+    <p class="sp" style="text-align:center;margin:0 auto 40px;color:rgba(255,255,255,.44)">
+      El potencial está identificado. La tecnología existe. El siguiente paso es la validación que lleve este proyecto del concepto a la realidad.
+    </p>
+    <div class="cta-btns">
+      <a href="#como" class="cta-main">Explorar el sistema →</a>
+      <a href="#galeria" class="cta-ghost">Ver todos los renders</a>
+    </div>
+    <p class="cta-note">Universidad Nacional de Colombia · Facultad de Minas · Proyecto Integrado de Ingeniería · Medellín 2026</p>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="fi">
+    <div>
+      <div class="fb-brand">AERO<span>-RIEL</span></div>
+      <p style="font-size:.74rem;color:rgba(255,255,255,.2);margin-top:5px">Movilidad aérea ligera, modular y automatizada</p>
+    </div>
+    <div class="fm">
+      Universidad Nacional de Colombia<br>
+      Facultad de Minas · Sede Medellín<br>
+      Proyecto Integrado de Ingeniería · 2026
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="/js/main.js"></script>
+</body>
+</html>
