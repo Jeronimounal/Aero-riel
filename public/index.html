@@ -111,7 +111,7 @@
 <!-- ══ PROBLEMA ══════════════════════════════════════════════ -->
 <section id="problema" class="sec" style="background:var(--ink2);position:relative;overflow:hidden">
   <div style="position:absolute;inset:0;background-image:url('/images/renders/render_9.jpg');background-size:cover;background-position:center 40%;opacity:.08;filter:saturate(.4)"></div>
-  <div style="position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start" class="prob-layout">
+  <div style="position:relative;z-index:1" class="prob-layout">
     <div>
       <div class="slbl rv">El desafío</div>
       <h2 class="sh rv">La movilidad urbana<br><span class="hl">está bloqueada</span></h2>
@@ -134,18 +134,29 @@
 <style>
 .prob-layout { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
 @media(max-width:900px){.prob-layout{grid-template-columns:1fr;gap:36px}}
+@media(max-width:480px){.prob-layout{gap:24px}}
 .prob-cards { display:flex; flex-direction:column; gap:14px; }
+@media(max-width:480px){.prob-cards{gap:10px}}
 .pcard { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07); border-radius:18px; padding:28px 32px; transition:all .4s var(--ease); position:relative; overflow:hidden; }
+@media(max-width:480px){.pcard{padding:20px 20px;border-radius:14px}}
 .pcard::after { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:linear-gradient(to bottom,var(--teal),var(--leaf)); transform:scaleY(0); transform-origin:top; transition:transform .4s var(--ease); border-radius:0 0 0 18px; }
 .pcard:hover { background:rgba(255,255,255,.07); border-color:rgba(0,194,179,.18); transform:translateX(5px); }
 .pcard:hover::after { transform:scaleY(1); }
 .pc-ico { font-size:1.6rem; margin-bottom:12px; }
+@media(max-width:480px){.pc-ico{font-size:1.3rem}}
 .pcard h3 { font-family:var(--syne); font-weight:700; font-size:1rem; color:var(--white); margin-bottom:6px; letter-spacing:-.02em; }
+@media(max-width:480px){.pcard h3{font-size:0.9rem}}
 .pcard p { font-size:.855rem; color:rgba(255,255,255,.48); line-height:1.65; }
+@media(max-width:480px){.pcard p{font-size:0.8rem;line-height:1.55}}
 .prob-quote { background:linear-gradient(135deg,rgba(0,194,179,.1) 0%,rgba(45,106,53,.12) 100%); border:1px solid rgba(0,194,179,.18); border-radius:20px; padding:42px; display:flex; flex-direction:column; gap:20px; position:sticky; top:120px; }
+@media(max-width:900px){.prob-quote{position:static;top:auto}}
+@media(max-width:480px){.prob-quote{padding:28px;border-radius:16px;gap:16px}}
 .pq-mark { font-family:var(--syne); font-weight:800; font-size:5rem; line-height:.8; color:rgba(0,194,179,.2); }
+@media(max-width:480px){.pq-mark{font-size:3.5rem}}
 .pq-text { font-family:var(--syne); font-weight:600; font-size:clamp(1.1rem,2.2vw,1.45rem); line-height:1.45; letter-spacing:-.025em; color:rgba(255,255,255,.88); font-style:italic; }
+@media(max-width:480px){.pq-text{font-size:1rem}}
 .pq-attr { font-size:.8rem; color:rgba(255,255,255,.35); letter-spacing:.04em; font-weight:500; }
+@media(max-width:480px){.pq-attr{font-size:0.75rem}}
 </style>
 
 
@@ -214,7 +225,7 @@
 
 
 <!-- ══ GALERÍA 3D ═════════════════════════════════════════════ -->
-<section id="galeria" style="background:var(--ink);padding:110px 80px">
+<section id="galeria" class="galeria-section">
   <div class="gallery-header rv">
     <div class="slbl">Renders 3D del proyecto</div>
     <h2 class="sh">Visualización<br><span class="hl">del futuro</span></h2>
@@ -414,7 +425,7 @@
       <h2 class="sh" style="color:var(--t1)">Ocho ingenieros<br><span class="hlg">detrás del riel</span></h2>
     </div>
     <div class="rv">
-      <p style="font-size:.93rem;color:var(--t3);line-height:1.8">Estudiantes de la Facultad de Minas de la Universidad Nacional de Colombia que convirtieron una idea técnica en una propuesta de movilidad integral, evaluada y defendible.</p>
+      <p style="font-size:clamp(0.85rem,1.5vw,0.93rem);color:var(--t3);line-height:1.8">Estudiantes de la Facultad de Minas de la Universidad Nacional de Colombia que convirtieron una idea técnica en una propuesta de movilidad integral, evaluada y defendible.</p>
       <p style="font-size:.78rem;color:var(--t4);margin-top:10px;font-style:italic">Director: Diego Alexander Herrera Uribe · Proyecto Integrado de Ingeniería · 2026</p>
     </div>
   </div>
@@ -455,7 +466,7 @@
 
 
 <!-- ══ CTA ════════════════════════════════════════════════════ -->
-<section id="cta" style="background:var(--ink);position:relative;overflow:hidden;padding:140px 80px;text-align:center">
+<section id="cta" class="cta-section">
   <div class="cta-bg" style="background-image:url('/images/renders/render_19.jpg')"></div>
   <div class="cta-inner rv">
     <div class="slbl" style="justify-content:center;color:var(--teal)">
